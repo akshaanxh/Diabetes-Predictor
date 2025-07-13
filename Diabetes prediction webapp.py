@@ -2,8 +2,14 @@ import numpy as np
 import pickle
 import streamlit as st
 
+<<<<<<< HEAD
 # Load the trained model
 loaded_model = pickle.load(open("trained_model.sav", 'rb'))
+=======
+# Load the trained model using a relative path
+loaded_model = pickle.load(open("trained_model.sav", 'rb'))
+
+>>>>>>> beb986f (Fix: update app.py with relative path and formatting)
 def diabetes_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
@@ -16,13 +22,13 @@ def diabetes_prediction(input_data):
 
 def main():
     st.set_page_config(page_title="Diabetes Predictor", page_icon="🩺", layout="centered")
+
     st.title("🧠 Diabetes Prediction App")
     st.markdown("""
-    This app predicts whether a person is **diabetic or not** using their health data.  
-    Just fill in the details and hit **Predict**!
+    Welcome to the **Diabetes Predictor** web app!  
+    This app uses a Machine Learning model to predict if a person is diabetic based on health inputs.
     """)
 
-    # Input fields
     st.header("📝 Enter Patient Health Information")
 
     pregnancies = st.number_input("Pregnancies", min_value=0, step=1)
@@ -34,14 +40,14 @@ def main():
     diabetes_pedigree = st.number_input("Diabetes Pedigree Function", min_value=0.0, format="%.3f")
     age = st.number_input("Age", min_value=0)
 
-    # Prediction button
     if st.button("🔍 Predict"):
         user_input = [pregnancies, glucose, blood_pressure, skin_thickness, insulin, bmi, diabetes_pedigree, age]
         result = diabetes_prediction(user_input)
         st.subheader("🔎 Result")
-        st.success(result if 'not' in result else '')
-        st.error(result if 'is diabetic' in result else '')
+        if 'not' in result:
+            st.success(result)
+        else:
+            st.error(result)
 
-# ✅ This part makes sure Streamlit only runs main() when executing this file
 if __name__ == "__main__":
     main()
