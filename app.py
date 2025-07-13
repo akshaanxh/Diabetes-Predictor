@@ -2,14 +2,9 @@ import numpy as np
 import pickle
 import streamlit as st
 
-<<<<<<< HEAD
-# Load the trained model
-loaded_model = pickle.load(open("trained_model.sav", 'rb'))
-=======
 # Load the trained model using a relative path
 loaded_model = pickle.load(open("trained_model.sav", 'rb'))
 
->>>>>>> beb986f (Fix: update app.py with relative path and formatting)
 def diabetes_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
