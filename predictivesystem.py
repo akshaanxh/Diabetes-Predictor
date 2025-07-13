@@ -5,7 +5,7 @@ import numpy as np
 import pickle 
 
 #loading the saved model
-loaded_model = pickle.load(open("C:/Users\HII\Desktop/MACHINE LEARNING/ML PROJECTS\DIABETES PREDICTION USING SVM/trained_model.sav", 'rb'))
+loaded_model = pickle.load(open("trained_model.sav", 'rb'))
 
 
 #Making a predictive system for this model
