@@ -2,8 +2,8 @@
 
 A simple and interactive **Streamlit web app** that predicts whether a person is diabetic or not using a **Support Vector Machine (SVM)** model trained on health data.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://akshaanxh-diabetes-predictor.streamlit.app)
-
+[![Open in Streamlit][(https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://akshaanxh-diabetes-predictor.streamlit.app)
+](https://diabetes-predictor-vyywp7exwa9972cgaebq5t.streamlit.app/)
 ---
 
 ## 📊 Features
@@ -21,7 +21,7 @@ A simple and interactive **Streamlit web app** that predicts whether a person is
 
 ## 🚀 Live Demo
 
-🔗 [Click here to open the live app](https://akshaanxh-diabetes-predictor.streamlit.app)
+🔗 [Click here to open the live app][(https://akshaanxh-diabetes-predictor.streamlit.app)](https://diabetes-predictor-vyywp7exwa9972cgaebq5t.streamlit.app/)
 
 ---
 
