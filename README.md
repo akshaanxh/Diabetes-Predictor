@@ -68,3 +68,93 @@ cd diabetes-predictor
 
 
 
+
+
+2\. Install dependencies
+
+bash
+
+Copy
+
+Edit
+
+pip install -r requirements.txt
+
+3\. Run the Streamlit app
+
+bash
+
+Copy
+
+Edit
+
+streamlit run app.py
+
+🧠 ML Model Details
+
+Algorithm: Support Vector Machine (SVM)
+
+
+
+Target Variable: Diabetic (1) / Not Diabetic (0)
+
+
+
+Input Features:
+
+
+
+Pregnancies
+
+
+
+Glucose
+
+
+
+Blood Pressure
+
+
+
+Skin Thickness
+
+
+
+Insulin
+
+
+
+BMI
+
+
+
+Diabetes Pedigree Function
+
+
+
+Age
+
+
+
+📁 Project Structure
+
+File	Description
+
+app.py	Streamlit frontend app script
+
+trained\_model.sav	Pre-trained SVM model for predictions
+
+requirements.txt	Python dependencies
+
+README.md	Project documentation
+
+
+
+✍️ Author
+
+👤 Akshaanxh
+
+
+
+
+
