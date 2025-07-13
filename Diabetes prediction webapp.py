@@ -3,8 +3,7 @@ import pickle
 import streamlit as st
 
 # Load the trained model
-loaded_model = pickle.load(open("C:/Users/HII/Desktop/MACHINE LEARNING/ML PROJECTS/DIABETES PREDICTION USING SVM/trained_model.sav", 'rb'))
-
+loaded_model = pickle.load(open("trained_model.sav", 'rb'))
 def diabetes_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
     input_data_reshaped = input_data_as_numpy_array.reshape(1, -1)
